@@ -6,20 +6,20 @@
 
 Необходимо добавить функцию:
 
-```
->>> from pprint_json import pretty_print_json, load_data
+```python
+from pprint_json import pretty_print_json, load_data
 ```
  
 Добавить json файл:
 
-```
->>> load_data('alco_shops.json')
+```python
+load_data('alco_shops.json')
 ```
 
-При помощи функций print() выводим информацию с JSON:
+При помощи функций `print()` выводим информацию с JSON:
 
-```
->>> print(load_data('alco_shops.json'))
+```python
+print(load_data('alco_shops.json'))
 
 
 ...
@@ -94,7 +94,7 @@
 
 Запуск на Linux:
 
-```
+```bash
 $ python pprint_json.py <path to file>
 ```
 
