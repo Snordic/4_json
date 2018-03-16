@@ -8,8 +8,8 @@ def load_data(filepath):
     return pretty_print_json(data_json)
 
 
-def pretty_print_json(data):
-    return json.dumps(data, ensure_ascii=False, sort_keys=True, indent=7)
+def pretty_print_json(json_handling):
+    return json.dumps(json_handling, ensure_ascii=False, sort_keys=True, indent=7)
 
 
 if __name__ == '__main__':
