@@ -3,9 +3,9 @@ import sys
 
 
 def load_data(filepath):
-    with open(filepath, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    return pretty_print_json(data)
+    with open(filepath, 'r', encoding='utf-8') as file_json:
+        data_json = json.load(file_json)
+    return pretty_print_json(data_json)
 
 
 def pretty_print_json(data):
