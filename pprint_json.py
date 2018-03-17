@@ -13,7 +13,7 @@ def pretty_print_json(json_handling):
 
 
 if __name__ == '__main__':
+    print(load_data(sys.argv[1]))
+else:
     file_name_json = 'alco_shops.json'
     print(load_data(file_name_json))
-else:
-    print(load_data(sys.argv[1]))
