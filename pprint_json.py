@@ -9,13 +9,14 @@ def load_data(filepath):
 
 
 def pretty_print_json(data_from_json):
-    print(json.dumps(data_from_json, ensure_ascii=False, sort_keys=True, indent=7))
+    print(json.dumps(data_from_json, ensure_ascii=False,
+                     sort_keys=True, indent=7))
 
 
 if __name__ == '__main__':
     try:
         pretty_print_json(load_data(sys.argv[1]))
-    except IndexError: print('Ошибка: Вы не добавили файл!')
-    except TypeError: print('Ошибка: Вы не добавили файл!')
-    except json.decoder.JSONDecodeError: print('Ошибка: Расширение файла не JSON!')
-
+    except IndexError:
+        print('Ошибка: Вы не добавили файл!')
+    except json.decoder.JSONDecodeError:
+        print('Ошибка: Расширение файла не JSON!')
