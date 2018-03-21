@@ -9,8 +9,11 @@ def load_data(filepath):
 
 
 def pretty_print_json(data_from_json):
-    print(json.dumps(data_from_json, ensure_ascii=False,
-                     sort_keys=True, indent=7))
+    print(json.dumps(
+        data_from_json,
+        ensure_ascii=False,
+        sort_keys=True, indent=7)
+    )
 
 
 if __name__ == '__main__':
@@ -20,3 +23,5 @@ if __name__ == '__main__':
         print('Ошибка: Вы не добавили файл!')
     except json.decoder.JSONDecodeError:
         print('Ошибка: Расширение файла не JSON!')
+    except FileNotFoundError:
+        print('Ошибка: Файл не найден!')
